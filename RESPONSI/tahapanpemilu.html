@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman Pemilu</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    header {
+        background-color: #000000;
+        text-align: center; /* Tengahkan teks */
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    header img {
+        width: 30px;
+        height: auto;
+        margin-right: 5px;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #ffffff;
+    }
+    .logo-right {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 150px; /* Ubah ukuran logo sesuai kebutuhan */
+        height: auto;
+        z-index: 9999;
+    }
+    .logo-right img {
+        width: 100%;
+        height: auto;
+        max-width: 150px; /* Tambahkan max-width agar tidak melebihi ukuran parent */
+    }
+    .container {
+        padding: 20px;
+        text-align: center; /* Tengahkan konten dalam container */
+    }
+    h2 {
+        font-size: 36px; /* Besarkan ukuran font */
+    }
+    .slider {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .slider img {
+        width: 100%;
+        height: auto;
+        max-width: 100%; /* Tambahkan max-width agar tidak melebihi ukuran parent */
+    }
+    .box-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box {
+        width: 10cm;
+        height: 2cm;
+        border: 1px solid #ccc;
+        margin: 10px;
+        text-align: center; /* Tengahkan teks */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box i {
+        font-size: 48px; /* Ukuran icon lebih besar */
+        margin-bottom: 10px; /* Jarak antara icon dan teks */
+    }
+    .box span {
+        display: block; /* Membuat teks berada di bawah icon */
+    }
+    .footer-container {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+    }
+    .notice {
+        width: 4cm;
+        height: 1cm;
+        border: 1px solid #fa7a7a;
+        text-align: center;
+        line-height: 1cm;
+        background-color: #f44949;
+        margin-right: 1cm; /* Jarak 1cm ke kanan */
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    .label {
+        background-color: #333;
+        color: white;
+        padding: 5px 10px;
+        display: inline-block;
+    }
+    .tabel {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+        clear: both;
+        overflow: hidden;
+        border-collapse: collapse; /* Menyatukan border antar sel */
+        width: 40cm; /* Tambahkan width sesuai kebutuhan */
+        margin: 0 auto; /* Pusatkan tabel */
+    }
+    .tabel th,
+    .tabel td {
+        border: 1px solid #ccc; /* Tambahkan border di setiap sel */
+        padding: 8px; /* Berikan padding pada sel */
+        text-align: left; /* Ratakan teks ke kiri */
+    }
+    .buku {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    .garis-buku {
+        width: 80%;
+        border-top: 1px solid #000;
+        margin: 10px auto;
+    }
+
+    /* Tag tambahan untuk format teks TAHAPAN DAN JADWAL PENYELENGGARAAN PEMILU TAHUN 2024 */
+    .buku p {
+        font-size: 24px; /* Besarkan ukuran font */
+        color: black; /* Berikan warna hitam */
+        font-weight: bold; /* Berikan tebal pada font */
+    }
+</style>
+</head>
+<body>
+<header>
+</header>
+<div class="logo-right">
+
+</div>
+<div class="container">
+    <h2>TAHAPAN PEMILU</h2>
+    <div class="slider">
+        <div><img src="https://utusanpolitik.aman.or.id/wp-content/uploads/sites/33/2019/02/pemilu-2019-kpu-jatim-akan-rekrut-2-komisioner-tambahan.png" alt=""></div>
+    </div>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <div class="box"><i class="fas fa-users"></i> <span>PENDAFTARAN, VERIFIKASI DAN PENETAPAN PARTAI POLITIK</span></div>
+        <div class="box"><i class="fas fa-user"></i> <span>PENETAPAN JUMLAH KURSI DAN DAPIL</span></div>
+    </div>
+    <div class="box-container">
+        <div class="box"><i class="fas fa-user"></i> <span>PENCALONAN PRESIDEN DAN WAKIL PRESIDEN</span></div>
+        <div class="box"><i class="fas fa-comment"></i> <span>LAPORAN KAMPANYE DAN DANA KAMPANYE</span></div>
+    </div>
+    <div class="box-container">
+        <div class="box"><i class="fas fa-chart-bar"></i> <span>PENCALONAN DPD</span></div>
+        <div class="box"><i class="fas fa-chart-bar"></i> <span>PENCALONAN DPR RI</span></div>
+        <div class="box"><i class="fas fa-chart-bar"></i> <span>PENCALONAN DPRD PROVINSI</span></div>
+        <div class="box"><i class="fas fa-chart-bar"></i> <span>PENCALONAN DPRD KABUPATEN/KOTA</span></div>
+    </div>
+    </div>
+    <div class="buku">
+        <p>TAHAPAN DAN JADWAL PENYELENGGARAAN PEMILU TAHUN 2024</p>
+        <table class="tabel" border="1">
+            <tr>
+                
+                <th>JADWAL</th>
+                <th>TAHAPAN</th>
+            </tr>
+            <tr>
+                <td>14 Juni 2022 - 14 Juni 2024</td>
+                <td>Perencanaan Program dan Anggaran</td>
+            </tr>
+            <tr>
+                <td>14 Juni 2022 - 14 Desember 2023</td>
+                <td>Penyusunan Peraturan KPU</td>
+            </tr>
+            <tr>
+                <td>14 Oktober 2022 - 21 Juni 2023</td>
+                <td>Pemutakhiran data Pemilih dan penyusunan daftar Pemilih</td>
+            </tr>
+            <tr>
+                <td>29 Juli 2022 - 13 Desember 2022</td>
+                <td>Pendafatran dan Verifikasi Peserta Pemilu</td>
+            </tr>
+            <tr>
+                <td>14 Desember 2022 - 14 Februari 2022</td>
+                <td>Penetapan Peserta Pemilu</td>
+            </tr>
+            <tr>
+                <td>14 Oktober 2022 - 9 Februari 2023</td>
+                <td>Penetapan jumlah kursi dan penetapan daerah pemilihan</td>
+            </tr>
+            <tr>
+                <td>6 Desember 2022 - 25 November 2023</td>
+                <td>Pencalonan DPD</td>
+            </tr>
+            <tr>
+                <td>24 April 2023 - 25 November 2023</td>
+                <td>Pencalonan anggota DPR, DPRD provinsi, dan DPRD kabupaten/kota</td>
+            </tr>
+            <tr>
+                <td>19 Oktober 2023 - 25 November 2023</td>
+                <td>Pencalonan Presiden dan Wakil Presiden</td>
+            </tr>
+            <tr>
+                <td>28 November 2023 - 10 Februari 2024</td>
+                <td>Masa Kampanye Pemilu</td>
+            </tr>
+            <tr>
+                <td>11 Februari 2024 - 13 Februari 2024</td>
+                <td>Masa Tenang</td>
+            </tr>
+            <tr>
+                <td>14 Februari 2024 - 15 Februari 2024</td>
+                <td>Pemungutan dan Penghitungan Suara</td>
+            </tr>
+            <tr>
+                <td>15 Februari 2024 - 20 Maret 2024</td>
+                <td>Rekapitulasi Hasil Perhitungan Suara</td>
+            </tr>
+            <tr>
+                <td>disesuaikan dengan akhir masa jabatan masing-masing anggota DPRD kabupaten/kota</td>
+                <td>Pengucapan Sumpah/Janji DPRD kabupaten/kota</td>
+            </tr>
+            <tr>
+                <td>disesuaikan dengan akhir masa jabatan masing-masing anggota DPRD provinsi</td>
+                <td>Pengucapan Sumpah/Janji DPRD provinsi</td>
+            </tr>
+            <tr>
+                <td>1 Oktober 2024</td>
+                <td>Pengucapan Sumpah/Janji DPR dan DPD</td>
+            </tr>
+            <tr>
+                <td>20 Oktober 2024</td>
+                <td>Pengucapan Sumpah/Janji Presiden dan Wakil Presiden</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<footer>
+    &copy; 2024 <span class="label">Komisi Pemilihan Umum</span>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false
+        });
+    });
+</script>
+</body>
+</html>

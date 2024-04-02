@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman Pemilu</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
+    header {
+        background-color: #363636;
+        text-align: left;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+    header img {
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #ffffff;
+    }
+    .logo-right {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 150px; /* Ubah ukuran logo sesuai kebutuhan */
+        height: auto;
+        z-index: 9999;
+    }
+    .logo-right img {
+        width: 100%;
+        height: auto;
+        max-width: 150px; /* Tambahkan max-width agar tidak melebihi ukuran parent */
+    }
+    .container {
+        padding: 20px;
+        text-align: center; /* Tengahkan konten dalam container */
+    }
+    h2 {
+        font-size: 36px; /* Besarkan ukuran font */
+    }
+    .slider {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .slider img {
+        width: 100%;
+        height: auto;
+        max-width: 100%; /* Tambahkan max-width agar tidak melebihi ukuran parent */
+    }
+    .boxes {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: 150px;
+        height: 150px;
+        border: 1px solid #ccc;
+        margin: 10px;
+        text-align: center; /* Tengahkan teks */
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box i {
+        font-size: 48px; /* Ukuran icon lebih besar */
+        margin-bottom: 10px; /* Jarak antara icon dan teks */
+    }
+    .box span {
+        display: block; /* Membuat teks berada di bawah icon */
+    }
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    .label {
+        background-color: #333;
+        color: white;
+        padding: 5px 10px;
+        display: inline-block;
+    }
+    .tabel {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+        clear: both;
+        overflow: hidden;
+    }
+    .tabel table {
+        margin: 0 auto;
+    }
+</style>
+</head>
+<body>
+<header>
+    <img src="https://beritatangerang.id/wp-content/uploads/2018/07/KPU_Logo.svg_-1068x1182.png" alt="Logo KPU">
+    <h1>Komisi Pemilihan Umum</h1>
+</header>
+<div class="logo-right">
+    <img src="https://infopemilu.kpu.go.id/assets/img/core-img/emas.png" alt="Logo Emas KPU">
+</div>
+<div class="container">
+    <h2>SELAMAT DATANG</h2>
+    <div class="slider">
+        <div><img src="https://fin.co.id/upload/02d29bf1c0bd75cffe33ac39e6a70854.jpg" alt=""></div>
+        <div><img src="https://i.ytimg.com/vi/s5AtFHSaeMo/maxresdefault.jpg" alt=""></div>
+        <div><img src=" https://cdn.idntimes.com/content-images/community/2020/05/pemilihan%20umum_wm_600x315.jpg" alt=""></div>
+       
+    </div>
+    <div class="boxes">
+        <div class="box"><i class="fas fa-check-circle"></i> <span>THAPAN PEMILU</span></div>
+        <div class="box"><i class="fas fa-user"></i> <span>SELEKSI ANGGOTA KPU</span></div>
+        <div class="box"><i class="fas fa-comment"></i> <span>TANGGAPAN</span></div>
+        <div class="box"><i class="fas fa-history"></i> <span>RIWAYAT PEMILU</span></div>
+        <div class="box"><i class="fas fa-vote-yea"></i> <span>RIWAYAT PEMILIHAN</span></div>
+        <div class="box"><i class="fas fa-users"></i> <span>CEK ANGGOTA DAN PENGURUS PARPOL</span></div>
+        <div class="box"><i class="fas fa-sync-alt"></i> <span>PEMUTAKHIRAN DATA PARTAI</span></div>
+    </div>
+</div>
+<div class="tabel">
+   
+</div>
+<footer>
+    &copy; 2024 <span class="label">Komisi Pemilihan Umum</span>
+</footer>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            dots: false,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false
+        });
+    });
+</script>
+</body>
+</html>
